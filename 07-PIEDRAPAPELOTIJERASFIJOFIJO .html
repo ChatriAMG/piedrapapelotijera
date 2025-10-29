@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My first game</title>
+<style>
+
+body {
+      background-color: #060035; 
+      color: white
+    }
+
+    .caca{
+background-color: yellow
+    }
+
+  .culo{
+  background-color:rgb(222, 123, 123)
+}
+
+  .pichi {
+  background-color: rgb(77, 226, 43)
+}
+  </style>
+</head>
+
+<body>
+
+  <p>rock <br> paper <br> scissors</p>
+  <button class = "caca" onclick="
+   pickComputerMove();
+
+    console.log(computerMove);
+
+
+    
+    let result = ``;
+
+    if (computerMove === `rock`) {
+      result = `Tie.`;
+    } else if (computerMove === `paper`) {
+      result = `you lose.`;
+    } else if (computerMove === `scissors`) {
+      result = `you win!`; console.log (
+        
+      )
+    }
+    
+    alert(`you picket rock. computer picked ${computerMove}. ${result}`);
+    ">rock</button>
+
+  <button class = "culo" onclick="
+   pickComputerMove();
+
+
+    console.log(computerMove);
+
+    let result = ``;
+
+    if (computerMove === `rock`) {
+      result = `You Win!.`;
+    } else if (computerMove === `paper`) {
+      result = `Tie.`;
+    } else if (computerMove === `scissors`) {
+      result = `you lose.`;
+    }
+
+    alert(`you picket paper. computer picked ${computerMove}. ${result}`);
+    ">paper</button>
+
+
+  <button class = "pichi" onclick="
+    console.log(pickComputerMove ());
+
+
+    console.log(computerMove);
+
+    let result = ``;
+
+    if (computerMove === `rock`) {
+      result = `You lose!.`;
+    } else if (computerMove === `paper`) {
+      result = `You Win!`;
+    } else if (computerMove === `scissors`) {
+      result = `Tie.`;
+    }
+
+    alert(`you picket scissors. computer picked ${computerMove}. ${result}`);
+    ">scissors</button>
+
+
+  <script>
+
+    let computerMove = ``;
+
+    function pickComputerMove() {
+    const randomNumber = Math.random();
+
+        if (randomNumber >= 0 && randomNumber < 1 / 3) {
+          computerMove = `rock`;
+        } else if (randomNumber >= 1 / 3 && randomNumber <2/3) {
+          computerMove =`paper`;
+        } else if (randomNumber >= 2 / 3 &&  randomNumber < 1) {
+          computerMove = `scissors`;
+          
+        }
+
+        return "rock";
+    }
+
+  </script>
+
+
+</body>
+
+</html>
